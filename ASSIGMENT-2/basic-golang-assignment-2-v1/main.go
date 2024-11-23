@@ -71,7 +71,7 @@ func ModifyStudent(programStudi, nama string, fn studentModifier) string {
 	}
 	return "Mahasiswa tidak ditemukan."
 }
-
+	
 func UpdateStudyProgram(programStudi string, student *string) {
 	parts := strings.Split(*student, "_")
 	*student = fmt.Sprintf("%s_%s_%s", parts[0], parts[1], programStudi)
